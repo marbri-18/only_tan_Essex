@@ -12,9 +12,9 @@ class Products(models.Model):
     image = CloudinaryField('image', default='placeholder')
     product_type = models.CharField(max_length=100, blank=True)
     Description = models.TextField(blank=True)
-    product_size = models.CharField(max_length=50)
-    product_price = models.CharField(max_length=50)
-    created_on = models.DateField(auto_now_add=True)
+    product_size = models.CharField(max_length=50, default="0 ml")
+    product_price = models.CharField(max_length=50, default="£0.00")
+    created_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ['-created_on']
