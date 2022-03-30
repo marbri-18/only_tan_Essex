@@ -27,13 +27,17 @@ class CommentAdmin(admin.ModelAdmin):
 class SessionAdmin(admin.ModelAdmin):
     list_display = ('session_date_time', 'customer_name', 'over_18_yrs', 'tandc_understood')
     list_filter = ('session_date_time', 'customer_name')
-    actions = ['set_over_18_yrs', 'set_tandc_understood']
+    actions = ['set_over_18_yrs', 'set_tandc_understood', 'clear_age_and_tandc']
 
-    def tandc_understood(self, request, queryset):
+    def set_tandc_understood(self, request, queryset):
         queryset.update(tandc_understood=True)
 
     def set_over_18_yrs(self, request, queryset):
         queryset.update(over_18_yrs=True)
+
+    def clear_age_and_tandc(self, request, queryset):
+        queryset.update(over_18_yrs=False)
+        queryset.update(tandc_understood=False)
 
 
 
