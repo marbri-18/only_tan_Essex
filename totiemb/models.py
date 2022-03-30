@@ -21,3 +21,23 @@ class Product(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Customer(models.Model):
+    fname = models.CharField(max_length=100)
+    lname = models.CharField(max_length=100)
+    email = models.EmailField()
+    telephone = models.CharField(max_length=100)
+    dob = models.DateField()
+    isAdmin = models.BooleanField(default=False)
+    username = models.CharField(max_length=50)
+    password = models.CharField(max_length=50)
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['lname']
+
+    def __str__(self):
+        return f"{self.fname} {self.lname}"
+
+           
