@@ -14,6 +14,7 @@ class Products(models.Model):
     Description = models.TextField(blank=True)
     product_size = models.CharField(max_length=50)
     product_price = models.CharField(max_length=50)
+    created_on = models.DateField(auto_now_add=True)
 
     class Meta:
         ordering = ['-created_on']
