@@ -2,10 +2,12 @@
 
 {% block content %}
 <!-- Header container-->
-<section class="container header-container">
+<section class="container header-container vh-100">
     <div class="row">
         <div class="image-container col-12">
             <!-- Sunbed image goes here -->
+            {% load static %}
+<img src="{% static 'totiemb/media/sunbed_text.jpg' %}" alt="home" />
         </div>
     </div>
     <div class="row">
@@ -18,7 +20,7 @@
 
 <!-- Features container-->
 <section class="container features-container">
-    <h2 class="section-heading">About the Only Tan Is Essex</h2>
+    <h2 class="section-heading">Come on down to get brown</h2>
     <div class="row">
         <!-- feature cards go here 3 or 4-->
     </div>
