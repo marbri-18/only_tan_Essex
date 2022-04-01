@@ -1,30 +1,40 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<div class="container-fluid">
+<!-- Header container-->
+<section class="container header-container">
     <div class="row">
-
-        <!-- Blog Entries Column -->
-        <div class="col-12 mt-3 left">
-            <h1>The Only way is Essex</h1>
-            <a href="/product">Products</a>
-            <a href="/events">Events</a>
-            <a href="/contact">Contact</a>
-            <a href="/about">About</a>
-            <div class="row">
-                <h3>Checklist</h3>
-                    <ol>
-                        <li>Does this page load?</li>
-                        <li>Does this page load within main.html frame?</li>
-                        <li>Does this page link to external resources (Bootstrap, FontAwesome etc)?</li>
-                        <li>Does this page link to Static/CSS file?</li>
-                        <li>Does this page link to Static.JS file?</li>
-                    </ol>
-            </div>
+        <div class="image-container col-12">
+            <!-- Sunbed image goes here -->
         </div>
     </div>
+    <div class="row">
+        <div class="buttons-container">
+            <!-- Call to action buttons go here-->
+        </div>
+    </div>
+</section>
+<!-- Header container ends -->
 
-</div>
+<!-- Features container-->
+<section class="container features-container">
+    <h2 class="section-heading">About the Only Tan Is Essex</h2>
+    <div class="row">
+        <!-- feature cards go here 3 or 4-->
+    </div>
+</section>
+<!-- Features container End-->
+
+<!-- Testimonials container -->
+<section class="container testimonials-container">
+    <h2 class="section-heading">What our customers say</h2>
+ <!-- testimonials carousel goes here -->
+</section>
+<!-- Testimonials container End -->
+
+
+
+
+
 
 {% endblock %}
