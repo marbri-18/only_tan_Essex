@@ -7,27 +7,22 @@
 
 h2 {
     color: red;
-    
 }
 
 .button-menu-home {
-    background-color: rgb(187, 129, 22);
+    background-color: #EEC170;
 }
 
 .button-menu-events {
-    background-color: rgb(124, 100, 22);
+    background-color: #F4712A;
 }
 
 .button-menu-about {
-    background-color: rgb(187, 129, 22);
+    background-color: #7f5a10;
 }
 
-
-
-
-
 .button-menu-contact {
-    background-color: rgb(124, 100, 22);
+    background-color: #F09942;
 }
 
 .list-inline-item:not(:last-child) {
