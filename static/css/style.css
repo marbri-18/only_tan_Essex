@@ -1,0 +1,33 @@
+
+/* Call to action buttons */
+
+.button-menu-home {
+    background-color: rgb(187, 129, 22);
+}
+
+.button-menu-events {
+    background-color: rgb(124, 100, 22);
+}
+
+.button-menu-about {
+    background-color: rgb(187, 129, 22);
+}
+
+
+
+.button-menu-contact {
+    background-color: rgb(124, 100, 22);
+}
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+.menu-container {
+    font-size: 0;
+}
+
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
