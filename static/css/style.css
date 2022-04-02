@@ -8,6 +8,12 @@ body {
     background-color: #C2FBEF;
 }
 
+/* Header container*/
+
+.header-container {
+    text-align: center;
+}
+
 /* Call to action buttons */
 
 .section-heading {
@@ -124,6 +130,16 @@ body {
 .card {
     max-width: 350px;
     margin: auto;
+}
+
+.card i {
+    font-size: 24px;
+    padding-top: 10px;
+    color:#514100;
+}
+
+.card h3 {
+    color:#F4712A;
 }
 
 
