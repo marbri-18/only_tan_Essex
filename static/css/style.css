@@ -5,18 +5,15 @@ body {
 }
 
 .navbar {
-    background-color: #c2FBEF;
+    background-color: #C2FBEF;
 }
 
 /* Call to action buttons */
 
 .section-heading {
-    color: red;
+    color: #514100;
 }
 
-h2 {
-    color: red;
-}
 
 .button-menu-home {
     background-color: #EEC170;
@@ -27,7 +24,7 @@ h2 {
 }
 
 .button-menu-about {
-    background-color: #7f5a10;
+    background-color: #7F5A10;
 }
 
 .button-menu-contact {
@@ -98,5 +95,35 @@ h2 {
     height: 90px;
 }
 
+/* Features */
+
+.features-container {
+    background-color: #C2FBEF;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.features-container .row {
+    margin: 0;
+    text-align: center;
+}
+
+.card-group {
+    /*width: 100%;
+    margin-left: 25px;*/
+}
+    
+
+.card-container {
+    margin: 20px;
+    max-width: 350px;
+    padding: 20px;
+}
+
+.card {
+    max-width: 350px;
+    margin: auto;
+}
 
 
