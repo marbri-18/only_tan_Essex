@@ -29,3 +29,6 @@ def index(request):
      template = loader.get_template('totiemb/index.html')
      context = {}
      return HttpResponse(template.render(context, request))
+
+def get_add_product(request):
+    return render (request, 'add_product.html')
