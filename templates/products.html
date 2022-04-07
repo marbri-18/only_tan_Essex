@@ -4,7 +4,7 @@
 
     <div class="container-fluid">
         <h1>Products</h1>
-        <a href="/add">Add a product</a>
+        <a href="https://8000-marbri18-onlytanessex-7w9evjizaz7.ws-eu38.gitpod.io/admin/totiemb/product/add/">Add a product</a>
         <div class="row">
             
             <!-- Blog Entries Column -->
@@ -16,6 +16,15 @@
                             <div class="card-body">
                                 <h2 class="card-title">{{ product.title }}</h3>
                                 <p class="card-text">{{ product.maker }}</p>
+                                <div class="image-container">
+                                    {% if "placeholder" in product.image.url %}
+                                    <img src="https://res.cloudinary.com/marbri-18/image/upload/v1648665253/abbsk3ob0lqosdxy1glq.png" alt="" class="card-img-top">
+                                    {% else %}
+                                    <img src="{{ product.image.url }}" alt="product image" class="card-img-top">
+                                    {% endif %}
+                                </div>
+                               
+                                <p class="card-text">{{ product.product_type }}</p>
                             </div>
                         </div>
                     </div>

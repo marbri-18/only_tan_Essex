@@ -4,6 +4,7 @@ from .models import Product
 from django.http import HttpResponse
 from django.template import loader
 
+
 # Create your views here.
 
 def get_home(request):
@@ -25,10 +26,5 @@ def get_about(request):
 def get_contact(request):
     return render(request,'contact.html')
 
-def index(request):
-     template = loader.get_template('totiemb/index.html')
-     context = {}
-     return HttpResponse(template.render(context, request))
 
-def get_add_product(request):
-    return render (request, 'add_product.html')
+
