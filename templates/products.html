@@ -18,7 +18,7 @@
                                 <p class="card-text">{{ product.maker }}</p>
                                 <div class="image-container">
                                     {% if "placeholder" in product.image.url %}
-                                    <img src="https://res.cloudinary.com/marbri-18/image/upload/v1648665253/abbsk3ob0lqosdxy1glq.png" alt="" class="card-img-top">
+                                    <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="" class="card-img-top">
                                     {% else %}
                                     <img src="{{ product.image.url }}" alt="product image" class="card-img-top">
                                     {% endif %}
