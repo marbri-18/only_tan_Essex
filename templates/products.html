@@ -14,8 +14,8 @@
                     <div class="col-md-3">
                         <div class="card mb-3">
                             <div class="card-body">
-                                <h2 class="card-title">{{ product.title }}</h3>
-                                <p class="card-text">{{ product.maker }}</p>
+                                <h4 class="card-title">{{ product.title }}</h4>
+                                <h6 class="card-text">{{ product.maker }}</h6>
                                 <div class="image-container">
                                     {% if "placeholder" in product.image.url %}
                                     <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="" class="card-img-top">
@@ -23,8 +23,15 @@
                                     <img src="{{ product.image.url }}" alt="product image" class="card-img-top">
                                     {% endif %}
                                 </div>
-                               
-                                <p class="card-text">{{ product.product_type }}</p>
+                                <div class="card-lower">
+                                    <p class="card-text"><strong>{{ product.product_type }}</strong></p>
+                                    <p class="card-description">{{product.short_description}}</p>
+                                    <p class="card-product-size"><strong>{{ product.product_size }}</strong> </p>
+                                    <p class="card-product-price"><strong>{{ product.product_price }}</strong></p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="" class="btn btn-lg">Read More <i class="fa-solid fa-chevrons-right"></i></a>
+                                </div> 
                             </div>
                         </div>
                     </div>
